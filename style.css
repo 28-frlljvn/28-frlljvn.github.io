@@ -1,0 +1,126 @@
+:root {
+    --primary-100: #FF7F50;
+    --primary-200: #dd6236;
+    --primary-300: #8f1e00;
+    --accent-100: #8B4513;
+    --accent-200: #ffd299;
+    --text-100: #000000;
+    --text-200: #2c2c2c;
+    --bg-100: #F7EEDD;
+    --bg-200: #ede4d3;
+    --bg-300: #c4bcab;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poetsen one;
+    background-color: var(--bg-200);
+}
+
+h2,h3 {
+    color: var(--primary-100);
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--accent-200);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.gambar-artikel {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+.subtitle{
+    color: black;
+    font-size: 20px;
+}
+.jumbotron{
+    font-size: 20px;
+    background-color: var(--bg-200);
+    text-align: center;
+    color: var(--primary-100);
+    padding: 60px;
+}
+
+.card{
+    background-color: var(--bg-100);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+header{
+    display: inline;
+}
+nav{
+    background-color: var(--primary-100);
+    padding: 1px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+}
+nav ul li a:hover{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+main{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#content{
+    flex-grow: 6;
+}
+aside{
+    flex-grow: 1;
+    margin: auto;
+}
+
+/* for mobile phone */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    main{
+        flex-direction: column;
+    }
+    nav{
+        text-align: center;
+    }
+    aside{
+        text-align: center;
+    }
+    
+}
+/* for  tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    main{
+        flex-direction: row;
+    }
+    nav{
+        text-align: center;
+    }
+    aside{
+        text-align: center;
+    }
+}
+
