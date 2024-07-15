@@ -1,0 +1,161 @@
+:root {
+  --primary-100: #ff7f50;
+  --primary-200: #dd6236;
+  --primary-300: #8f1e00;
+  --accent-100: #8b4513;
+  --accent-200: #ffd299;
+  --text-100: #000000;
+  --text-200: #2c2c2c;
+  --bg-100: #f7eedd;
+  --bg-200: #ede4d3;
+  --bg-300: #c4bcab;
+}
+
+.img-fluid {
+  height: 100px;
+  width: 100px;
+  object-position: center;
+  border-radius: 70%;
+}
+
+.img-fluid-review {
+  width: 500px;
+  height: 500px;
+
+  object-position: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poetsen One", sans-serif;
+  background-color: var(--bg-200);
+}
+
+h2,
+h3 {
+  color: var(--primary-100);
+}
+
+footer {
+  padding: 20px;
+  background-color: var(--accent-200);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.gambar-artikel {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.subtitle {
+  color: black;
+  font-size: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  background-color: var(--bg-200);
+  text-align: center;
+  color: var(--primary-100);
+  padding: 60px;
+}
+
+.card {
+  background-color: var(--bg-100);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  width: 100%;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  background-color: var(--primary-100);
+  padding: 1px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+#content {
+  flex-grow: 6;
+}
+
+aside {
+  flex-grow: 1;
+  margin: auto;
+  height: 100%;
+}
+.card-body {
+  height: auto;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-left: 50px;
+  border-radius: 70%;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 0;
+  }
+  aside {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-direction: row;
+  }
+  aside {
+    text-align: center;
+  }
+}
